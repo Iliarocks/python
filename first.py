@@ -13,3 +13,5 @@ def get_dog_years(age):
         return str(24 + (age - 2) * 4)
 
 print(get_dog_years(age))
+
+val_1 = 1
