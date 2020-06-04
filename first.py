@@ -16,6 +16,18 @@ print(get_dog_years(age))
 
 val_1 = 1
 
-print('type name:')
-x = input()
-print(x)
+val_1 = input('Value 1: ')
+val_2 = input('Value 2: ')
+operation = input('Operation(mul, min...): ')
+
+def calculator():
+    if operation == 'mul':
+        print(val_1 * val_2)
+    elif operation == 'div':
+        print(val_1 / val_2)
+    elif operation == 'min':
+        print(val_1 - val_2)
+    elif operation == 'add':
+        print(val_1 + val_2)
+
+calculator()
