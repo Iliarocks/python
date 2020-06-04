@@ -14,8 +14,6 @@ def get_dog_years(age):
 
 print(get_dog_years(age))
 
-val_1 = 1
-
 val_1 = input('Value 1: ')
 val_2 = input('Value 2: ')
 operation = input('Operation(mul, min...): ')
