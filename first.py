@@ -31,3 +31,5 @@ def calculator():
         print(val_1 + val_2)
 
 calculator()
+
+print('Hello world!')
