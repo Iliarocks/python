@@ -14,9 +14,9 @@ def get_dog_years(age):
 
 print(get_dog_years(age))
 
-val_1 = input('Value 1: ')
-val_2 = input('Value 2: ')
-operation = input('Operation(mul, min...): ')
+#val_1 = input('Value 1: ')
+#val_2 = input('Value 2: ')
+#operation = input('Operation(mul, min...): ')
 
 def calculator():
     if operation == 'mul':
@@ -28,6 +28,14 @@ def calculator():
     elif operation == 'add':
         print(val_1 + val_2)
 
-calculator()
+#calculator()
 
 print('Hello world!')
+
+import random
+def get_random_num(max):
+    print(random.randint(1, max))
+
+upper_limit = input('Upper limit of die: ')
+
+get_random_num(upper_limit)
