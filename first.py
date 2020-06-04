@@ -15,3 +15,7 @@ def get_dog_years(age):
 print(get_dog_years(age))
 
 val_1 = 1
+
+print('type name:')
+x = input()
+print(x)
