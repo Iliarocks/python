@@ -39,3 +39,5 @@ def get_random_num(max):
 upper_limit = input('Upper limit of die: ')
 
 get_random_num(upper_limit)
+
+print('hello world')
