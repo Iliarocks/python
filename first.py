@@ -1,41 +1,26 @@
-def print_name(name):
-    if name:
-        print(name, 'is bad... psyche')
-
-print_name('Ilia')
-
-age = 13
-
-def get_dog_years(age):
-    if age < 2:
-        return 'Age must be over two to work'
-    elif age >= 2:
-        return str(24 + (age - 2) * 4)
-
-print(get_dog_years(age))
-
-#val_1 = input('Value 1: ')
-#val_2 = input('Value 2: ')
-#operation = input('Operation(mul, min...): ')
-
-def calculator():
-    if operation == 'mul':
-        print(val_1 * val_2)
-    elif operation == 'div':
-        print(val_1 / val_2)
-    elif operation == 'min':
-        print(val_1 - val_2)
-    elif operation == 'add':
-        print(val_1 + val_2)
-
-#calculator()
-
-print('Hello world!')
+print('Rock Paper Scissors!!')
+user = raw_input('Choose your weapon: ')
+choices = ['rock', 'paper', 'scissors']
 
 import random
-def get_random_num(max):
-    print(random.randint(1, max))
+def get_comp_choice():
+    return choices[random.randint(0, 2)]
 
-upper_limit = input('Upper limit of die: ')
+def play(comp):
+    print(user + comp)
+    if user + comp == 'paperscissors':
+        print('comp beats user with scissors')
+    elif user + comp == 'paperrock':
+        print('user beats comp with paper')
+    elif user + comp == 'rockpaper':
+        print('comp beats user with paper')
+    elif user + comp == 'rockscissors':
+        print('user beats comp with rock')
+    elif user + comp == 'scissorsrock':
+        print('comp beats user with rock')
+    elif user + comp == 'scissorspaper':
+        print('user beats comp with scissors')
+    else:
+        print("It's a tie")
 
-get_random_num(upper_limit)
+play(get_comp_choice())
